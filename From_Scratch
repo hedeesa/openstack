@@ -1,0 +1,9 @@
+OpenStack Services 
+  Compute service --- NOVA
+  Accelerators resource management --- CYBORG 
+  Object store --- SWIFT
+  Block storage --- CINDER 
+  Networking --- NEUTRON 
+  Identity Service --- KEYSTONE 
+  Dashboard --- Horizon
+  
