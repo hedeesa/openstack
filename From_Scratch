@@ -6,4 +6,5 @@ OpenStack Services
   Networking ------------------------- NEUTRON 
   Identity Service ------------------- KEYSTONE 
   Dashboard -------------------------- Horizon
+  Image Service ---------------------- GLANCE
   
