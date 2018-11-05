@@ -1,10 +1,31 @@
 OpenStack Services 
   Compute service -------------------- NOVA
+                                            It is responsible for managing compute instance lifecycle.
   Accelerators resource management --- CYBORG 
   Object store ----------------------- SWIFT
+                                            It works with binary objects to store data in a distributed, replicated way.
+                                            works like a proxy
+                                            apps are using RESTful API to talk to swift
+                                            
   Block storage ---------------------- CINDER 
+                                            It provides persistent storage to instances.
+                                            the idea is that instant storage, by default, is ephemeral.
+                                            That is also like booting from a Linux live CD.
+                                            If you are working from a Linux live CD, if you ever try to change the configuration file,
+                                            where would you change it to?
+                                            
   Networking ------------------------- NEUTRON 
   Identity Service ------------------- KEYSTONE 
+                                            Keystone is using a database, which is the MariaDB database, to store information
   Dashboard -------------------------- Horizon
   Image Service ---------------------- GLANCE
+                                              is used to store virtual machine disk images.
+                                              Cirros test image = is only like thirteen megabytes, 
+                                                                  and this is a minimal Linux operating system.
+                                              
+                                              
+  Instance = Virtual Machine 
+  Persistent storage =  is any data storage device that retains data after power to that device is shut off.
+  Users = Tenants 
   
+  keystonerc_admin 
