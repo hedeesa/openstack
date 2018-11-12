@@ -22,7 +22,26 @@ OpenStack Services
                                               is used to store virtual machine disk images.
                                               Cirros test image = is only like thirteen megabytes, 
                                                                   and this is a minimal Linux operating system.
-                                              
+  metering and billing --------------- Ceilometer 
+                                              It collects data that can be consulted by third party software, 
+                                              but it can also be used to get usage statistics, 
+                                              which can be passed through to the Heat service
+  
+  Database-as-a-Service --------------- Trove 
+                                               offer database functionality to users without the need to deal with complex administration tasks.
+  
+  big data ---------------------------- Sahara
+                                            It was configured to offer easy Hadoop deployment on top of OpenStack.
+  Messaging Service ------------------- Zaqar 
+  
+  shared file system service ---------- Manila 
+                                            Originally based on Cinder
+                                            The file access is share-based, not block-based, like running Samba in the cloud.
+ DNS-as-a-Service  -------------------- Designate 
+                                            
+ security and key management  --------- Barbican 
+ 
+ olicy-as-a-Service ------------------- Congress 
                                               
   Instance = Virtual Machine 
   Persistent storage =  is any data storage device that retains data after power to that device is shut off.
