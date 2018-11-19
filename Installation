@@ -1,0 +1,19 @@
+
+            1-Install CentOS 1708 (or later) with at least 6GB of RAM and 2 CPU cores
+            
+            2-Configure a fixed IP address
+            
+            3-yum install -y https://rdoproject.org/repos/rdo-release.rpm
+            4-systemctl stop NetworkManager; systemctl disable NetworkManager
+            5-yum install -y centos-release-openstack-pike
+            6-yum install -y openstack-packstack openstack-utils
+            7-packstack --gen-answer-file /root/answers.txt
+            8-Open the /root/answers.txt file with an editor and make sure it includes the following settings:
+              ADD THE OTHER PARAMETERS HERE!!
+              CONFIG_NTP_SERVERS=pool.ntp.org
+              CONFIG_KEYSTONE_ADMIN_PW=password
+              CONFIG_DEFAULT_PASSWORD=password
+              CONFIG_HORIZON_SSL=n
+              CONFIG_PROVISION_DEMO=n
+            9-packstack --answer-file /root/answers.txt
+            10-At the end of the deployment, type openstack-status to verify if OpenStack is working.
