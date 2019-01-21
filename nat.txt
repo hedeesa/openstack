@@ -1,0 +1,5 @@
+ifconfig eno2:8 78.39.157.148 netmask 255.255.255.128 up
+iptables -t nat -A PREROUTING -d 78.39.213.170 -p tcp  -j DNAT --to-destination 172.24.5.103
+iptables -t nat -A POSTROUTING  -p tcp  -d 172.24.5.103 -j SNAT --to-source 78.39.213.170
+service iptables save
+
